@@ -1,4 +1,7 @@
 # Reddit Account Generator (Fixed)
+
+100% educational purposes and not for r/place
+
  **WHAT IS IT?**
  
  This is a semi-automatic Reddit account generator. I'm saying "semi-automatic" because it still requires a Google Captcha to be completed at the end of the creation process.
