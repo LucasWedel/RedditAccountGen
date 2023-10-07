@@ -13,8 +13,6 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-
-
 def generateAccount():
     # USES CHROMEDRIVERMANAGER TO AUTO UPDATE CHROMEDRIVER
     options = Options()
@@ -69,7 +67,6 @@ def generateAccount():
     driver.execute_script("window.open('');")
     driver.switch_to.window(driver.window_handles[1])
     driver.get('https://www.1secmail.com/')
-    
     driver.execute_script("window.open('');")
     driver.switch_to.window(driver.window_handles[2])
     driver.get('https://chrome.google.com/webstore/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh/related')
@@ -80,9 +77,7 @@ def main():
     sg.theme('DarkBlue2')
     layout = [
         [sg.Text("Just press the button below to generate a brand new Reddit account!")],
-        [sg.Text("Nixue Test1")],
         [sg.Text("Eventual errors will appear in the field below")],
-        [sg.Text("Nixue Test2 ")],
         [sg.Output(size=(60, 15))],
         [sg.Button("Generate"), sg.Button("Exit"), sg.Button("Instance")]
     ]
